@@ -1,0 +1,21 @@
+{# home.twig
+
+	This file creates the template for the Home page of the Funkids Toys application.
+	It includes the header.twig.
+	It determines if a customer is logged in and displays the appropriate links on the page.
+#}
+
+{% include 'header.twig' with { 'pageTitle' : pageTitle}  %}
+
+<br><h3>
+  
+{% if user != '' %}
+	<a href="/fifa/search">Search</a><br>
+	<a href='/fifa/orders'>Leagues</a><br>
+	<a href="/fifa/logout">Logout {{user}}</a><br>
+{% else %}
+	<a href="/fifa/search">Search Players</a><br>
+	<a href="/fifa/register">Register</a><br>
+	<a href="/fifa/login">Login</a><br>
+{% endif %}	<h3>
+{% include 'footer.twig' %}

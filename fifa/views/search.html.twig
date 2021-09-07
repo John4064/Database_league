@@ -1,0 +1,48 @@
+{# search.html.twig
+
+	This file provies the template to allow a user to search for the name of a toy.
+	It uses the form templage and then displays results of the search on the same page.
+	The results are displayed as a table with the toys name and price.  The toy name
+	has an embedded link to the page for the specific toy.
+#}
+
+{% include 'header.twig' %}
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+<h1>Search</h1>
+
+{{form_start(form)}}
+{{form_widget(form)}}
+{{form_end(form)}}
+
+{% if results %}
+    <h1>My Webpage</h1>
+	<table>
+		<tr>
+		<th class="rank">Rank</th>
+		<th class="name">Name</th>
+		<th class="team">Team</th>
+		<th class="age">Age</th>
+		<th class="goals">Goals</th>
+		<th class="shots">Shots</th>
+		</tr>
+	{% for item in results %}
+		<tr>
+		<td class="rank">{{ item.rank+1 }}</td>
+		<td class="name">{{ item.name }}</td>
+		<td class="team">{{ item.team }}</td>
+		<td class="age">{{ item.age }}</td>
+		<td class="goals">{{ item.goals }}</td>
+		<td class="shots">{{ item.shots }}</td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endif %}
+
+{% include 'footer.twig' %}

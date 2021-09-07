@@ -1,0 +1,50 @@
+{# orders.html.twig
+
+	This file provides the template for displaying the order information for a specific 
+	customer.  It receives the information from index.php and creates a table for the
+	customers pending orders (undelivered) and a table for the customers delivered orders.
+	If either of these lists is empty, a message is displayed instead.
+#}
+
+{% include 'header.twig' %}
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+<h1>Leagues</h1>
+
+{% if pending %}
+<h3>Your Fantasy Team:</h3>
+	<table>
+		<tr>
+		<th class="accountID">AccountID</th>
+		<th class="lname">League Name</th>
+		<th class="team_name">Team Name</th>
+		<th class="points">Points</th>
+		<th class="roster">Roster</th>
+		</tr>
+		{#
+		Added a new class called manuf for the manufactur name. Inserted a column to the table and displayed mname
+		#}
+	{% for item in pending %}
+		<tr>
+		<td class="accountID">{{ item.accountID }}</td>
+		<td class="lname">{{ item.lname }}</td>
+		<td class="team_name">{{ item.team_name }}</td>
+		<td class="points">{{ item.points }}</td>
+		{% for item in delivered %}
+	    <td class="roster">{{ item.name }}</td>
+	    {% endfor %}
+		</tr>
+	{% endfor %}
+	
+	</table>
+{% else %}
+	<h3>No League or Team</h3>
+{% endif %}
+
+{% include 'footer.twig' %}
