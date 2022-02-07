@@ -6,3 +6,5 @@ bard:Panda1234
 john4064:Panda1234
 No league/team
 strada:Panda
+
+![ER DIAGRAM](ERDIAGRAM.png)
