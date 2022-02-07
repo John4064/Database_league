@@ -8,3 +8,5 @@ No league/team
 strada:Panda
 
 ![ER DIAGRAM](ERDIAGRAM.png)
+
+![Relational Database](Relational.png)
