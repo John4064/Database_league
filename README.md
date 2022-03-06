@@ -12,7 +12,7 @@ strada:Panda
 <h2>Relational Database Diagram</h2>
 
 ![Relational Database](Relational.png)<br />
-<h2>Sample Queries:/h2>
+<h2>Sample Queries:</h2>
 <b>Returns the number of players on teams with players shooting above 20% by alphabetical order Query:</b>
 SELECT players.team, COUNT(players.team) as 'Players Above 20%' FROM players WHERE players.goals/players.shots>.18 GROUP BY players.team ORDER BY players.team ASC
 
