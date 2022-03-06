@@ -7,7 +7,9 @@ john4064:Panda1234
 No league/team
 strada:Panda
 
+<h2>Er Diagram</h2>
 ![ER DIAGRAM](ERDIAGRAM.png)<br />
+<h2>Relational Database Diagram</h2>
 
 ![Relational Database](Relational.png)<br />
 Sample Queries:
