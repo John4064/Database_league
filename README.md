@@ -8,9 +8,8 @@ No league/team
 strada:Panda
 
 <h2>Er Diagram</h2>
-![ER DIAGRAM](ERDIAGRAM.png)<br />
+![ER DIAGRAM](ER DIAGRAM.png)<br />
 <h2>Relational Database Diagram</h2>
-
 ![Relational Database](Relational.png)<br />
 <h2>Sample Queries:</h2>
 <b>Returns the number of players on teams with players shooting above 20% by alphabetical order<br> Query:</b><br>
