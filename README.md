@@ -7,10 +7,11 @@ john4064:Panda1234
 No league/team
 strada:Panda
 
+
 <h2>Er Diagram</h2>
-![ER DIAGRAM](ER DIAGRAM.png)<br />
+<img src="Diagrams/ER Diagram.png"><br />
 <h2>Relational Database Diagram</h2>
-![Relational Database](Relational.png)<br />
+<img src="Diagrams/relational.png"><br />
 <h2>Sample Queries:</h2>
 <b>Returns the number of players on teams with players shooting above 20% by alphabetical order<br> Query:</b><br>
 SELECT players.team, COUNT(players.team) as 'Players Above 20%' FROM players WHERE players.goals/players.shots>.18 GROUP BY players.team ORDER BY players.team ASC
