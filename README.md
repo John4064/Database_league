@@ -1,5 +1,5 @@
 # Database_league
-A database system and web app for a fantasy soccer application. No longer live hosted at the moment and no more updates in future.
+A database system and web app for a fantasy soccer application. No longer live hosted at the moment and no more updates in future. Key files for the web application is located in fifa/views
 
 <h2>Er Diagram</h2>
 <img src="Diagrams/ER Diagram.png"><br />
