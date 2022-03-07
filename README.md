@@ -1,12 +1,5 @@
 # Database_league
- Very basic setup but using SQL, twig, php, and bootstrap created a fantasy league database system
- To see it in action use https://john4064.rhody.dev/fifa/
-Login credentials:
-bard:Panda1234
-john4064:Panda1234
-No league/team
-strada:Panda
-
+A database system and web app for a fantasy soccer application. No longer live hosted at the moment and no more updates in future.
 
 <h2>Er Diagram</h2>
 <img src="Diagrams/ER Diagram.png"><br />
